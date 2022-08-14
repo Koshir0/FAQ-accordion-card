@@ -10,10 +10,11 @@
   
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; border-bottom: none; }
     .attribution a { color: hsl(228, 45%, 44%); }
-    
+  
     body{
       background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
       background-repeat: no-repeat;
@@ -37,13 +38,14 @@
       display: flex;
       justify-content: flex-end;
       margin-top: 20vh;
+      /* position: relative; */
 
       overflow: hidden;
     }
     h4{
       font-weight: 300;
       padding-bottom: 20px;
-     
+      /*background-color: red;*/
 
     }
     h4:hover{
@@ -54,11 +56,18 @@
       display: none;
     }
 .faq{
- 
+   /*background-color: rgb(174, 223, 0); */
+
   width: 50%;
+  /*padding: 10px 0 50px 50px;*/
 
+  /*margin-left:50px;*/
+  
+  
 }
-
+/*.images{
+  position: relative;
+}*/
 .box{
   position:absolute;
    top:190px;
@@ -67,15 +76,15 @@
   
 }
 .woman{
- 
+  /* width: 50%; */
   max-height: 380px;
   position: relative;
   top:-10px;
-  left: -90px;
+  left: -150px;
 
  
 }
-    
+
 @media screen and (max-width: 375px) {
   body{
     font-weight: 300;
@@ -92,11 +101,24 @@
     margin:15vh auto;
     padding: 15px;
     border-radius: 25px;
-
+    /* position: relative; 
+     top: 0;
+     left: 0;*/
   }
-
+  /* img{
+    padding:
+      15px;
+      position: absolute;
+      top: 0;
+left: 100px;
+width: 50%;
+      
+    
+  } */
   .woman{
     position: absolute;
+/*  top:-30px;
+  left:70px;*/
   top:-80px;
   left:90px;
   width:50%;
@@ -112,13 +134,14 @@
   }
   .faq{
     width: 100%;
-    
+     /*background-color: black; */
+     /*border: 1px solid red;*/
     padding:0;
     margin: 5vh auto;
   }
   h1{
     text-align: center;
-  
+    /*background-color: red;*/
     padding: 15px;
     margin-top: 10vh;
     font-size: 30px;
@@ -132,7 +155,9 @@
     background-color: red;
      
 
-
+   /* position:relative;
+    top: 0;
+    left: 0;*/
   }
   }
 
@@ -146,7 +171,11 @@
     <img src="images/illustration-woman-online-desktop.svg" alt="woman" class="woman">
     
 <img src="images/illustration-box-desktop.svg" alt="box" class="box">
-   
+   <!--  <div class="images">
+    
+
+    </div>
+ -->
 
     <section class="faq">
       <h1>FAQ</h1>
@@ -180,7 +209,11 @@
     </section>
   </main>
 
-
+ <!--  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Koshir0</a>.
+</div> -->
     <script>
       const span1 = document.querySelector(".span1");
       const span2 = document.querySelector(".span2");
